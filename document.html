@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document.write 사용법</title>
+</head>
+<body>
+    
+    <!-- <script>
+        document.write("<h1>어서오세요!!</h1>");
+        alert("환영합니다!");
+    </script> -->
+    
+    <script>
+        let name = prompt("당신의 이름을 입력하세요 : ");
+        document.write(name + "<h1>님 환영합니다!!</h1>");
+        console.log("name : " + name);
+        document.write("name" + "<h1>어서오세요!!</h1>");
+        document.write("<h1>" + name + "님 어서오세요!!</h1>");
+        // 큰 따옴표 안에 있는 텍스트는 화면에 출력
+        // 큰 따옴표 밖에 있는 텍스트는 값을 출력
+        // html태그 적용시 태그값 큰따옴표해야 적용
+        // document.write() 시 변수를 웹문서에 표시 할 수 있음
+        // script는 console에서 디버깅 확인 가능
+    </script>
+</body>
+</html>

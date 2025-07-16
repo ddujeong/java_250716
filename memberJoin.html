@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+       table{
+        text-align: center;
+        height: 300px;
+        width: 600px;
+       }
+    </style>
+</head>
+<body>
+    <h2> 회원 가입 양식</h2>
+    <hr>
+    <form name="joinForm" onsubmit ="return checkJoin()">
+        <!-- onsubmit = "return 변수명()" -->
+    <table border="1" cellspacing = "0" padding ="0">
+        <tr>
+            <th>아이디</th>
+            <td><input name="memberId" type="text" ></td>
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td><input name="memberPw" type="password"></td>
+        </tr>
+        <tr>
+            <th>회원 이름</th>
+            <td><input name="memberName" type="text"></td>
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <td><input name="memberEmail" type="email"></td>
+        </tr>
+        <tr>
+            <th>자기 소개</th>
+            <td><textarea name="memberInfo"></textarea></td>
+        </tr>
+        <tr >
+            <th colspan="2">
+                <input type="submit" value="회원가입">
+                <input type="reset" value="취소">
+            </th>
+        </tr>
+        
+    </table>
+    </form>
+    <script src="js/join.js"></script>
+</body>
+</html>

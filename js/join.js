@@ -13,8 +13,9 @@ function checkJoin() {
         document.joinForm.memberId.focus();
         return false;
     }
-    
+
     var idcheck = /^[ㄱ-ㅎ|가-힣]+$/;
+    // 한글 입력만 가능하게 하는 정규표현식 선언?
 
     if(!idcheck.test(document.joinForm.memberId.value)) {
         alert("아이디는 한글은 입력 불가능 합니다. 확인 후 다시 입력하세요.");
